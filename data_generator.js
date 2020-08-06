@@ -22,3 +22,10 @@ streams.users.snowwhite = [];
 streams.users.sofia = [];
 streams.users.tiana = [];
 window.users = Object.keys(stream.users);
+
+// Utility Function - Adds Messages to Data Structures //
+var addMessage = function(newMessage) {
+  var username = newMessage.user;
+  strams.users[username].push(newMessage);
+  streams.home.push(newMessage);
+};
