@@ -49,8 +49,7 @@ var randomTea = function() {
   return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
 };
 
-// Utility Functions - Generates random messages/harks on a random schedule //
-
+// Utility Functions - Generates random messages/teas on a random schedule //
 var generateRandomTea = function() {
   var tea = {};
   tea.user = randomElement(users);
@@ -58,3 +57,15 @@ var generateRandomTea = function() {
   tea.created_at = new Date(); // I bet I could make this be more readable by creating a date variable and then having this be a string of more readable data
   addTea(tea);
 };
+
+// Generates Messages //
+for (var i = 0; i < 16; i++) {
+  generateRandomTea();
+}
+
+// Utility Function - Schedules next message/tea //
+var scheduleNextTea = function() {
+  generateRandomTea();
+  setTimeout(scheduleNextTea, Math.random() * 1500);
+};
+scheduleNextTea();
