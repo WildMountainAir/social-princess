@@ -6,7 +6,8 @@ NOTE: This file generates data used to create fake messages.
 window.streams = {};
 streams.home = [];
 streams.users = {};
-strams.users.anna = [];
+streams.users.alison = [];
+streams.users.anna = [];
 streams.users.ariel = [];
 streams.users.aurora = [];
 streams.users.belle = [];
@@ -25,7 +26,7 @@ streams.users.tinkerbell - [];
 window.users = Object.keys(stream.users);
 
 // Utility Function - Adds Messages/Teas to Data Structures //
-var addMessage = function(newTea) {
+var addTea = function(newTea) {
   var username = newTea.user;
   strams.users[username].push(newTea);
   streams.home.push(newTea);
@@ -69,3 +70,17 @@ var scheduleNextTea = function() {
   setTimeout(scheduleNextTea, Math.random() * 1500);
 };
 scheduleNextTea();
+
+// Utility Function - Allows for creation of message/tea //
+var princess = 'alison';
+
+var writeTea = function() {
+  if(!princess) {
+    throw new Error('set the global princess property!');
+  }
+  var tea = {};
+  tea.user = princess;
+  tea.message = message;
+  tea.created_at = new Date();
+  addTea(tea);
+};
