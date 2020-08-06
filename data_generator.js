@@ -21,6 +21,7 @@ streams.users.rapunzel = [];
 streams.users.snowwhite = [];
 streams.users.sofia = [];
 streams.users.tiana = [];
+streams.users.tinkerbell - [];
 window.users = Object.keys(stream.users);
 
 // Utility Function - Adds Messages to Data Structures //
@@ -37,8 +38,8 @@ var randomElement = function(array) {
 };
 
 // Data Structure - Message elements //
-var opening = [];
-var verbs = [];
-var objects = [];
-var nouns = [];
-var tags = [];
+var opening = ['yesterday i', 'completely', 'utterly', 'last evening', 'of course i', 'an evil queen', 'the other princesses', 'a handsom prince', 'ugh'];
+var verbs = ['danced', 'cried', 'stopped', 'approached', 'married', 'got', 'escaped', 'loved', 'sang', 'cleaned', 'swam', 'saw', 'tempted', 'added', 'grabbed', 'lost', 'encouraged', 'brushed', 'froze', 'read', 'explored', 'walked', 'ran', 'sailed', 'pricked', 'forgot', 'discovered', 'invented', 'enjoyed', 'laughed', 'created'];
+var objects = ['my', 'your', 'the', 'a', 'an entire', 'this', 'a whole', 'this', 'that', 'my', 'the big', 'a new', 'a novel way of', 'the'];
+var nouns = ['noble steed', 'dragon', 'village', 'kingdom', 'bad decision', 'evil', 'canoe', 'sailboat', 'pixie dust', 'carriage', 'glass slipper', 'book', 'snowman', 'snowflake', 'sea', 'true love\'s kiss', 'thingamajig', 'fork', 'frog', 'shell', 'rose', 'spinning wheel', 'beast', 'Jimminy Cricket', 'spirit', 'hair', 'prince', 'happily ever after'];
+var tags = ['#princesslife', '#yeet', '#yolo', '#magic', '#belive', '#dreamscometrue,' '#evil', '#princess', '#royalty', '#crowndown', '#again', '#toad', '#truelove'];
