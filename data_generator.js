@@ -43,3 +43,8 @@ var verbs = ['danced', 'cried', 'stopped', 'approached', 'married', 'got', 'esca
 var objects = ['my', 'your', 'the', 'a', 'an entire', 'this', 'a whole', 'this', 'that', 'my', 'the big', 'a new', 'a novel way of', 'the'];
 var nouns = ['noble steed', 'dragon', 'village', 'kingdom', 'bad decision', 'evil', 'canoe', 'sailboat', 'pixie dust', 'carriage', 'glass slipper', 'book', 'snowman', 'snowflake', 'sea', 'true love\'s kiss', 'thingamajig', 'fork', 'frog', 'shell', 'rose', 'spinning wheel', 'beast', 'Jimminy Cricket', 'spirit', 'hair', 'prince', 'happily ever after'];
 var tags = ['#princesslife', '#yeet', '#yolo', '#magic', '#belive', '#dreamscometrue,' '#evil', '#princess', '#royalty', '#crowndown', '#again', '#toad', '#truelove'];
+
+// Utility Function - Generates message //
+var randomMessage = function() {
+  return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
+};
