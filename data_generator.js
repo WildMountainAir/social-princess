@@ -2,7 +2,7 @@
 NOTE: This file generates data used to create fake messages.
 */
 
-// Data Structures //
+// Data Structure - Streams for Message and User Data//
 window.streams = {};
 streams.home = [];
 streams.users = {};
@@ -29,3 +29,16 @@ var addMessage = function(newMessage) {
   strams.users[username].push(newMessage);
   streams.home.push(newMessage);
 };
+
+// Utility Function - Generates random index and grabs random element //
+var randomElement = function(array) {
+  var randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+};
+
+// Data Structure - Message elements //
+var opening = [];
+var verbs = [];
+var objects = [];
+var nouns = [];
+var tags = [];
