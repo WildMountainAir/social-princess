@@ -48,28 +48,193 @@ table {
 }
 /*
   ========================================
+  Colors
+  ========================================
+  */
+
+  colors {
+    color: #ce75a7;
+    color: #b05a8b;
+    color: #f1d1e1;
+    color: #f8e8f0;
+    color: #aa9ba3 #a2a2a2;
+    color: #24181e;
+    color: #70d3b0;
+    color: #a97dc6  #d86b7a;
+    color: #96bb88;
+    color: #44deff;
+    color: #cba878 #47c7fc;
+    color: #d5886e;
+  }
+/*
+  ========================================
   Custom styles
   ========================================
 */
+html {
+  height: 100%;
+}
 
 /*
   ========================================
   Typography
   ========================================
 */
+  body {
+    background: #f8e8f0;
+    color: #ce75a7;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-height: 100%;
+    margin-bottom: 80px;
+  }
 
-/*
+  h1,
+  h2 {
+    font-family: 'Rouge Script', 'cursive';
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #f8e8f0;
+  }
+
+  h4,
+  h5 {
+    color: #b05a8b;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 10px;
+    text-shadow: none;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+    text-shadow: none;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 5px;
+    text-shadow: none;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 21px;
+    text-shadow: none;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 19px;
+    text-shadow: none;
+    font-variant: small-caps;
+  }
+
+  h6 {
+    color: #24181e;
+    font-family: 'Lato';
+    font-size: 10px;
+    font-variant: small-caps;
+    line-height: 15px;
+    text-align: right;
+    text-shadow: none;
+  }
+
+  p {
+    color: #24181e;
+    font-size: 12px;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  cite,
+  em {
+    font-style: italic;
+  }
+  /*
   ========================================
   Grid
   ========================================
-*/
+  */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-/*
+.container,
+.grid {
+  margin: auto;
+  min-width: 100%;
+}
+
+.container {
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-1-4,
+.col-1-3,
+.col-1-2,
+.col-3-4 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.col-1-3 {
+  width: 30%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-3-4 {
+  width: 75%;
+}
+
+  /*
   ========================================
   Rows
   ========================================
 */
-
+.row,
+.row-alt {
+  min-width: 100%;
+}
+.row {
+  background: #f8e8f0;
+  padding: 60px 0 40px 0;
+}
+.row-alt {
+  background: #ce75a7;
+  background: -webkit-linear-gradient(to right, #b05a8b, #a97dc6);
+  background:    -moz-linear-gradient(to right, #b05a8b, #a97dc6);
+  background:         linear-gradient(to right, #b05a8b, #a97dc6);
+  padding: 44px 0 22px 0;
+}
 /*
   ========================================
   Clearfix
@@ -94,51 +259,227 @@ table {
   Links
   ========================================
 */
+a {
+  color: #70d3b0;
+}
+
+a:hover {
+  color: #cba878;
+  cursor: crosshair;
+}
+
+p a {
+  border-bottom: 1px solid #cba878;
+}
+
+li a {
+  cursor: crosshair;
+}
 
 /*
   ========================================
   Buttons
   ========================================
 */
+.btn {
+  border: 1px solid #f1d1e1;
+  border-radius: 25px;
+  color: #f8e8f0;
+  cursor: crosshair;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: 1px solid #ce75a7;
+  color: #70d3b0;
+  background: #f8e8f0;
+  text-decoration: none;
+}
+
+.btn-small {
+  border: 1px solid #f1d1e1;
+  border-radius: 25px;
+  color: #f8e8f0;
+  cursor: crosshair;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.btn-small:hover {
+  border: 1px solid #ce75a7;
+  color: #70d3b0;
+  background: #f8e8f0;
+  text-decoration: none;
+}
+
+.btn-submit {
+  background: #f8e8f0;
+  border: 2px solid #ce75a7;
+  border-radius: 25px;
+  cursor: crosshair;
+  vertical-align: middle;
+  display: inline-block;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
 
 /*
   ========================================
   Primary Header
   ========================================
 */
+.primary-header {
+  background-color: #ce75a7;
+  border-bottom: 2px solid #cba878;
+  padding-top: 10px;
+  max-height: 200px;
+  min-width: 100%;
+}
+.brand {
+  display: inline;
+  /* font-family: 'Butterfly Kids', cursive; */
+  /* font-family: 'Miss Fajardose', cursive; */
+  font-family: 'Rouge Script', cursive;
+  font-size: 85px;
+  /* font-weight: 300; */
+  padding: 0px 0px 0px 30px;
+}
 
+.tagline {
+  float: right;
+}
 /*
-  ========================================
-  Primary Footer
-  ========================================
+========================================
+Primary Footer
+========================================
+*/
+.primary-footer {
+  background-color: #ce75a7;
+  border-top: 2px solid #cba878;
+  padding: 10px 20px;
+  left:0px;
+  bottom:0px;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+}
+/*
+========================================
+Navigation
+========================================
+*/
+.nav {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.primary-nav {
+  font-size: 16px;
+  padding-right: 40px;
+}
+
+.secondary-nav {
+  font-size: 10px;
+}
+
+.nav li {
+  display: inline-flex;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  padding: 10px 0px 10px 0px;
+}
+
+.nav li:last-child {
+  margin-right: 10px;
+}
+/*
+========================================
+Home
+========================================
 */
 
 /*
-  ========================================
-  Navigation
-  ========================================
+========================================
+Profiles
+========================================
 */
 
 /*
-  ========================================
-  Home
-  ========================================
+========================================
+Teas/Messages
+========================================
 */
+.teas {
+  color: #ce75a7;
+}
+
+.tea {
+  font-family: 'Butterfly Kids', cursive;
+  border: 2px solid #ce75a7;
+  border-radius: 25px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 10px;
+}
+*{box-sizing: border-box;}
+
+.tea-box {
+  border: 2px solid #ce75a7;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 10px;
+}
+
+.input-field {
+  border-radius: 25px;
+  color: #ce75a7;
+  outline: none;
+  padding: 10px;
+  width: 90%;
+}
+
+.input-field:focus {
+  border: 2px solid #ce75a7;
+}
 
 /*
-  ========================================
-  Profiles
-  ========================================
+========================================
+Media
+========================================
 */
+.logo {
+  float: left;
+  height: 200px;
+  padding: 10px 10px 10px 20px;
+  width: auto;
+}
 
-/*
-  ========================================
-  Teas/Messages
-  ========================================
-*/
+.tagline-img {
+  display: inline-block;
+  height: 160px;
+  padding-right: 10px;
+}
 
-/*
-  ========================================
-  Media
-  ========================================
-*/
+.footer-img {
+  float: left;
+  height: 160px;
+  padding-left: 5px;
+  vertical-align: top;
+}
+
+.icon {
+  height: 30px;
+  width: auto;
+  padding: 2px;
+}
